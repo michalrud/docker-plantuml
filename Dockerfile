@@ -7,5 +7,5 @@ RUN apk add --no-cache graphviz ttf-droid ttf-droid-nonlatin curl py2-pip python
     && mkdir /app \
     && curl -L https://sourceforge.net/projects/plantuml/files/plantuml.${PLANTUML_VERSION}.jar/download -o /app/plantuml.jar \
     && apk del curl \
-    && pip install sphinx sphinxcontrib-plantuml
+    && pip install sphinx==1.6.7 sphinxcontrib-plantuml
 
